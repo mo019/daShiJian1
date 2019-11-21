@@ -6,8 +6,21 @@ $(function(){
         }else{
               return;
         }
-    })
-})
-$.get('http://localhost:8000/admin/getuser',function(res){
-    $('name').html = 'asd'
-})
+    });
+
+    jiceng.xianshi(function(res){
+        console.log(res.data)
+        
+       $('#mingzi').text(res.data.nickname);
+       $('.touxiang').prop('src',res.data.user_pic);
+
+       
+
+
+    });
+     
+
+
+
+
+});
