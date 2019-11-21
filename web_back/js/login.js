@@ -13,7 +13,7 @@ $(function () {
         jiceng.denglu(login_zhanghao, login_mima, function (res) {
 
             if (res.code === 200) {
-                // window.alert('登陆成功')
+               
                 location.href = './index.html'
             }
         })
